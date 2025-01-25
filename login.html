@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="login.css">
+    <header class="main-header">
+        TAMU Marketplace
+    </header>
+    <!-- Import register.js as a module -->
+    <script type="module" src="register.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="card-switch">
+      <label class="switch">
+        <input type="checkbox" class="toggle">
+        <span class="slider"></span>
+        <span class="card-side"></span>
+        <div class="flip-card__inner">
+          <!-- Log in form -->
+          <div class="flip-card__front">
+            <div class="title">Log in</div>
+            <form class="flip-card__form" id="login-form" onsubmit="event.preventDefault(); loginUser();">
+              <input class="flip-card__input" name="email" placeholder="Email" type="email" id="login-email" required>
+              <input class="flip-card__input" name="password" placeholder="Password" type="password" id="login-password" required>
+              <button class="flip-card__btn">Let's go!</button>
+            </form>
+          </div>
+
+          <!-- Sign up form -->
+          <div class="flip-card__back">
+            <div class="title">Sign up</div>
+            <form class="flip-card__form" id="signup-form" onsubmit="event.preventDefault(); registerUser();">
+              <input class="flip-card__input" placeholder="Name" type="text" id="name" required>
+              <input class="flip-card__input" name="email" placeholder="Email" type="email" id="signup-email" required>
+              <input class="flip-card__input" name="password" placeholder="Password" type="password" id="signup-password" required>
+              <button class="flip-card__btn">Confirm!</button>
+            </form>
+          </div>
+        </div>
+      </label>
+    </div>
+  </div>
+
+  <div class="button-container">
+    <!-- Buttons for other actions -->
+    <button class="button">
+      <!-- Icon 1 -->
+    </button>
+    <button class="button">
+      <!-- Icon 2 -->
+    </button>
+    <button class="button">
+      <!-- Icon 3 -->
+    </button>
+  </div>
+</body>
+
+</html>
