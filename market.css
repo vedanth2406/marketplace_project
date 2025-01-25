@@ -3,6 +3,19 @@
     padding: 0;
     box-sizing: border-box
 }
+/* Apply the Modak font to the Welcome text */
+#welcome-text {
+    font-family: 'Modak', sans-serif; /* Apply Modak font */
+    font-size: 36px; /* Adjust the font size as needed */
+    color: #333; /* Change the text color if needed */
+    text-align: center; /* Center align the text */
+}
+
+/* Apply the Montserrat font to other text elements, if needed */
+body {
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+}
+
 .navbar{
     display: flex;
     align-items: center;
@@ -28,7 +41,7 @@ p{
     color: #555;
 }
 .container{
-    max-width: 1300px;
+    max-width: 1200px;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
