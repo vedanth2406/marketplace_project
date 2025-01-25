@@ -252,3 +252,22 @@
   .icon {
     font-size: 20px;
   }
+/* QUESTION MARK BUTTON */
+.question-mark button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(128, 0, 0)
+}
+  
+.question-mark-button:hover {
+  background-color: rgba(128, 0, 0); /* Change to a lighter blue on hover */
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
