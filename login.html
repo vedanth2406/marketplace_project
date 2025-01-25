@@ -7,6 +7,80 @@
         TAMU Marketplace
     </header>
 </head>
+
+<style>
+  .question-mark-button {
+      position: fixed; 
+      bottom: 20px; 
+      right: 20px; 
+      background-color: rgba(128, 0, 0); 
+      color: white; 
+      border: none; 
+      border-radius: 50%; 
+      width: 40px;
+      height: 40px; 
+      font-size: 20px; 
+      text-align: center; 
+      line-height: 40px; 
+      cursor: pointer; 
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+
+  
+  .question-mark-button:hover {
+      background-color: rgba(128, 0, 0); 
+  }
+
+  body.blurred{
+    filter: blur(5px);
+  }
+
+  .popup-box{
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    border-color: rgba(128, 0, 0);
+    border-style:solid;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    max-width: 90%;
+    padding: 20px;
+    z-index: 1001;
+  }
+
+  .popup-content{
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #800000;
+    background: none;
+    border: none;
+}
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1000; 
+    backdrop-filter: blur(5px); 
+    display: none; 
+  }
+</style>
+
 <!-- From Uiverse.io by andrew-demchenk0 --> 
 <div class="wrapper">
     <div class="card-switch">
@@ -67,4 +141,39 @@
 <div class="question-mark button">
     <button class="question-mark-button" title="Help">?</button>
 </div>
+
+<div class="popup-box" id="popup">
+  <div class="popup-content">
+    <span class="close-button" id="closePopup">&times;</span>
+      <p>If you are new to the TAMU Marketplace, create a new account by signing up. If you are an existing user, please log in.</p>
+  </div>
+</div>
+
+<div class="backdrop" id="backdrop"> </div>
+
+<script>
+  const qButton = document.querySelector('.question-mark-button');
+  const popup = document.getElementById('popup');
+  const closePopup = document.getElementById('closePopup');
+  const backdrop = document.getElementById('backdrop');
+
+  qButton.addEventListener('click', () => {
+    popup.style.display = 'block';
+    backdrop.style.display = 'block'; // Show the backdrop
+  });
+
+  closePopup.addEventListener('click', () => {
+    popup.style.display = 'none';
+    backdrop.style.display = 'none'; // Hide the backdrop when closing the popup
+  });
+
+  window.addEventListener('click', (event) => {
+    if (event.target === backdrop) {  // Close the popup if clicking the backdrop
+      popup.style.display = 'none';
+      backdrop.style.display = 'none';
+    }
+  });
+
+</script>
+
 </html>
