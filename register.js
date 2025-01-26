@@ -49,7 +49,7 @@ window.loginUser = () => {
       const user = userCredential.user;
       console.log("User logged in: ", user);
       // Redirect to dashboard.html
-      window.location.href = 'dashboard.html';
+      window.location.href = 'market.html';
     })
     .catch((error) => {
       if (error.code === 'auth/wrong-password') {
