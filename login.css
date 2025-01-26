@@ -1,4 +1,9 @@
 /* THIS IS THE LOG IN AND SIGN IN PAGE */ 
+.body {
+  background-color: rgb(256, 236, 236);
+}
+
+
 .wrapper {
     --input-focus: #2d8cf0;
     --font-color: #323232;
