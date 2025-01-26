@@ -80,3 +80,54 @@ p{
     line-height: 60px;
     margin: 25px 0;
 }
+
+/* Style for dropdown */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    color: #333;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+/* Dropdown menu styling */
+.navbar ul .dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.navbar ul .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar ul .dropdown .dropdown-menu li {
+    width: 150px;
+}
+
+.navbar ul .dropdown .dropdown-menu li a {
+    padding: 10px 20px;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.navbar ul .dropdown .dropdown-menu li a:hover {
+    background-color: #f4f4f4;
+}
