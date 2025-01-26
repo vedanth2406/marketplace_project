@@ -1,0 +1,140 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;    /* Centers content vertically */
+    min-height: 100vh;
+    background: rgba(256, 236, 236);
+}
+
+/* Main Container */
+.container {
+    width: 680px;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Entry Area Styling */
+.entryarea {
+    position: relative;
+    height: 80px;
+    line-height: 80px;
+}
+
+/* Input Field Styling */
+input {
+    position: absolute;
+    width: 100%;
+    outline: none;
+    font-size: 2.2em;
+    padding: 0 30px;
+    line-height: 80px;
+    border-radius: 10px;
+    border: 2px solid maroon;
+    background: transparent;
+    transition: 0.1s ease;
+    z-index: 1111;
+}
+
+/* Label Styling */
+.labellines {
+    position: absolute;
+    font-size: 1.6em;
+    color: maroon;
+    padding: 0 25px;
+    margin: 20px;
+    background-color: rgba(256, 236, 236);
+    transition: 0.2s ease;
+}
+
+/* Focused Input and Label Behavior */
+input:focus,
+input:valid {
+    color: maroon;
+    border: 4px solid maroon;
+}
+
+input:focus + .labellines,
+input:valid + .labellines {
+    color: maroon;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 12px;
+    transform: translate(-15px, -16px) scale(0.88);
+    z-index: 1111;
+}
+
+/* Secondary Container */
+.container2 {
+    width: 680px;
+    position: relative; /* Removed top and right properties */
+    top: 150px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container3 {
+    width: 600px;
+    height: 300px;
+    position: relative;
+    top: 5px;
+    right:285px; 
+    font-family: "Montserrat", sans-serif;
+
+}
+
+
+.file-upload-form {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 150px;
+    right: 700px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .file-upload-label input {
+    display: none;
+  }
+  .file-upload-label svg {
+    height: 50px;
+    fill: maroon;
+    margin-bottom: 20px;
+  }
+  .file-upload-label {
+    cursor: pointer;
+    background-color:rgba(256, 236, 236); 
+    padding: 30px 70px;
+    border-radius: 40px;
+    border: 2px solid maroon;
+    box-shadow: 0px 0px 200px -50px rgba(0, 0, 0, 0.719);
+  }
+  .file-upload-design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .browse-button {
+    background-color: maroon;
+    font-family: "Montserrat", sans-serif;
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: white;
+    transition: all 0.3s;
+  }
+  .browse-button:hover {
+    background-color: rgb(171,78,82);
+  }
+  
+
+
+
