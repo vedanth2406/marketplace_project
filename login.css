@@ -6,8 +6,8 @@
     --bg-color: #fff;
     --bg-color-alt: #666;
     --main-color: #323232;
-    display: flex; /* Enable Flexbox */
-    justify-content: center; /* Center horizontally */
+    display: flex; 
+    justify-content: center; 
     align-items: center; 
     height: 100vh; 
     margin: 0; 
