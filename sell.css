@@ -11,7 +11,7 @@ body {
     justify-content: center; /* Centers content horizontally */
     align-items: center;    /* Centers content vertically */
     min-height: 100vh;
-    background: rgba(256, 236, 236);
+    background: white;
 }
 
 /* Main Container */
