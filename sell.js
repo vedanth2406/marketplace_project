@@ -65,7 +65,7 @@ postButton.addEventListener('click',()=>{
 })
 
 closePopup.addEventListener('click',()=>{
-    popup.style.display = 'block';
+    popup.style.display = 'none';
     backdrop.style.display = 'none';
 })
 
