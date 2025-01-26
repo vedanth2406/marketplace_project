@@ -52,8 +52,29 @@ async function save(title, price, description) {
     .catch((error) => {
         console.error("Error saving data: ", error);
     });
-    console.log("It was successful.")
 }
+
+const postButton = document.querySelector('.button')
+const popup = document.getElementById('popup')
+const closePopup = document.getElementById('closePopup');
+const backdrop = document.getElementById('backdrop');
+
+postButton.addEventListener('click',()=>{
+    popup.style.display = 'block';
+    backdrop.style.display = 'block';
+})
+
+closepopup.addEventListener('click',()=>{
+    popup.style.display = 'block';
+    backdrop.style.display = 'none';
+})
+
+window.addEventListener('click', (event) => {
+    if (event.target === backdrop) {
+        popup.style.display = 'none';
+        backdrop.style.display = 'none';
+    }
+    });
 
 
 
