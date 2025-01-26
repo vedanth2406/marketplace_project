@@ -52,6 +52,7 @@ async function save(title, price, description) {
     .catch((error) => {
         console.error("Error saving data: ", error);
     });
+    console.log("It was successful.")
 }
 
 
