@@ -196,7 +196,3 @@ p{
     transition-duration: .3s;
     padding-right: 10px;
   }
-  /* button click effect*/
-  .Btn:active {
-    transform: translate(200px ,250px);
-  }
