@@ -100,8 +100,8 @@ input:valid + .labellines {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 100px;
-    right: middle;
+    top: 80px;
+    left: 715px;
     font-family: "Montserrat", sans-serif;
   }
   .file-upload-label input {
@@ -143,13 +143,13 @@ input:valid + .labellines {
   /* POST  BUTTON */ 
 .button {
   position: absolute;
-  right: middle;
+  right: 760px;
   top: 750px;
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   padding-block: 0.5rem;
   padding-inline: 1.25rem;
-  background-color: rgb(0 107 179);
+  background-color:maroon;
   border-radius: 9999px;
   display: flex;
   align-items: center;
